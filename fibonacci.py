@@ -1,7 +1,10 @@
 def fib(n):
-    if n <= 1:
-        return n
-    else:
-        return (fib(n-1) + fib(n-2))
+    a = 0
+    b = 1
+    for i in range(n):
+        c = a + b
+        a=b
+        b=c
+    return a
 
-print(fib(6))
+print(fib(40))
